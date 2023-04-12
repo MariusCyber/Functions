@@ -8,13 +8,13 @@
 # 6) Afisati frecventa de apartie a unui nr k dintr-un vector. K citit de la tastatura.
 # 7) Se citeste un vector de cuvinte, sa se afiseze lungimea fiecarui cuvant
 # 8) Se citeste un vector de cuvinte, sa se afiseze cel mai lung cuvant
-# 9) Se citeste un vector de numare si un interval a, b. Sa se afiseze toate elementele vectorului care    					apartin intervalului (a,b).
+# 9) Se citeste un vector de numare si un interval (a,b). Sa se afiseze toate elementele vectorului care apartin intervalului (a,b).
 #10) Se citese de la tastatura numele unui director, sa se creeze directorul respectiv.
 #11) Se citeste de la tastatura numele unui fisier, se se stearga fisierul respectiv doar daca acesta exista. Daca fisierul nu exista sa se afiseze un mesaj de eroare.
 #12) Se citeste un numar n, sa se creeze n conturi de utilizatator.
 #13) Se introduce numele unui utilizator de la tastatura, sa se stearga user-ul respectiv.
 #14) Se citeste de la tastatura un vector de cuvinte, se se scrie cu majuscule toate elementele.
-#15) Se citeste continutul unui fisier. Sa se afiseze lunigimea celei mai lungi linii si sa se afiseze lungimea ei
+#15) Se citeste continutul unui fisier. Sa se afiseze lunigimea celei mai lungi linii si sa se afiseze lungimea ei.
 
 function problema_1()
 {
@@ -186,17 +186,17 @@ function problema_14()
 function problema_15()
 {
 	max=0
-	cuvant=0
+	linie=0
 	while read line
 	do
 		if [ ${#line} -gt $max ]
 		then
 			max=${#line}
-			cuvant=$line
+			linie=$line
 		fi
 		
 	done < file.txt
-	echo "Linia: $cuvant are lungimea de $max litere."
+	echo "Linia: $linie are lungimea de $max litere."
 }
 #problema_15
 
